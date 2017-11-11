@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+
+************************************************************************
+-->
+
+
+<PropertyList>
+
+    <note>
+        This model was created using publicly available data, publicly available
+        technical reports, textbooks, and guesses. It contains no proprietary or
+        restricted data. It has been validated only to the extent that it seems
+        to "fly right", and possibly to comply to published, publicly known,
+        performance data (maximum speed, endurance, etc.). Thus, this model
+        is meant for educational and entertainment purposes only.
+
+        This simulation model is not endorsed by any manufacturer, nor is the developer asking.
+    </note>
+	
+<!-- General characteristics
+
+  From Wiki- https://en.wikipedia.org/wiki/Handley_Page_Type_O
+
+General characteristics
+
+    Crew: four or five
+    Length: 62 ft 10 in (19.16 m)
+    Wingspan: 100 ft (30.48 m)
+    Height: 22 ft (6.71 m)
+    Wing area: 1,648 ftx2 (153.1 mx2)
+    Empty weight: 8,502 lb (3,856 kg)
+    Max. takeoff weight: 13,360 lb (6,060 kg)
+    Powerplant: 2 x Rolls-Royce Eagle VIII inline piston, 360 hp (268 kW) each
+
+Performance
+
+    Maximum speed: 97.5 mph (84.7 kn, 157 km/h)
+    Range: 608 nmi (700 mi, 1,120 km)
+    Service ceiling: 8,500 ft (2,600 m)
+    Rate of climb: 23 min to 5,000 ft
+    Endurance: 8 hours
+
+Armament
+
+    Guns: 5 x 0.303 in (7.7 mm) Lewis Guns (2 on nose Scarff ring, 2 on dorsal position and 1 at ventral hatch)
+    Bombs: Up to 2,000 lb (907 kg) of bombs -->
+
+
+ <sim include="Nasal/views.xml">
+
+	<description>Handley-Page-O-400</description>
+        <author>LesterBoffo FDM, Jason Root/Mossie 3D model-text</author>
+        <status>"CREATIVE COMMON BY-NC-SA Copyright"</status>
+        <version>0.01 yasim revision  2015-12-5</version>
+
+	<flight-model archive="y">yasim</flight-model>
+	<aero archive="y">HP-O-400-yasim</aero>
+	<model>
+		<path archive="y">Aircraft/HP-O-400/Models/hp-o400.xml</path>
+	</model>
+	
+
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/HP-O-400/Models/Effects/guns/submodels.xml</path>
+    </submodels>
+
+        <startup>
+            <splash-texture>Aircraft/HP-O-400/splash.jpg</splash-texture>
+        </startup>
+
+	<!--<view>
+		<internal archive="y">true</internal>
+		<config>
+				<x-offset-m archive="y">0</x-offset-m>
+                        <y-offset-m archive="y">0.785</y-offset-m>
+                        <z-offset-m archive="y">-0.485</z-offset-m>
+				<pitch-offset-deg archive="y">-4.0</pitch-offset-deg>
+				<default-field-of-view-deg type="double">68.0</default-field-of-view-deg>
+		</config>
+	</view> -->
+
+        <current-view>
+            <field-of-view type="double">62.0</field-of-view>
+        </current-view>
+        <chase-distance-m type="double">-15.0</chase-distance-m>
+
+	<sound>
+		<audible>true</audible>
+		<path archive="y">Aircraft/HP-O-400/Sounds/HP-O-400-sound.xml</path>
+	</sound>
+
+	   <menubar include="Nasal/hp-o-400-menu.xml"/>
+
+         <!-- Payload -->
+  <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>160</weight-lb>
+      <max-lb>220</max-lb>
+      <min-lb>120</min-lb>
+  </weight> 
+
+  <weight n="1">
+      <name>Observer</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>200</max-lb>
+      <min-lb>0</min-lb>
+  </weight>
+
+   <weight n="2">
+      <name>Gunner</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>200</max-lb>
+      <min-lb>0</min-lb>
+  </weight>
+
+ </sim>
+
+
+ <autopilot>
+     <settings>
+         <target-altitude-ft type="float">2000</target-altitude-ft>
+         <heading-bug-deg type="float">330</heading-bug-deg>
+     </settings>
+ </autopilot>
+ 
+ <input>
+   <keyboard include="Nasal/hp-o-400-keyboard.xml"/>
+ </input>
+
+ <controls>
+	<gear>
+		<brake-parking type="double">1.0</brake-parking>
+	</gear>
+ </controls>
+
+
+ <nasal>
+    <guns>
+      <file>Aircraft/HP-O-400/Nasal/weapons.nas</file>
+      <file>Aircraft/HP-O-400/Nasal/revi.nas</file>
+      <file>Aircraft/HP-O-400/Nasal/turrets.nas</file>  
+    </guns>
+ </nasal>
+
+</PropertyList>

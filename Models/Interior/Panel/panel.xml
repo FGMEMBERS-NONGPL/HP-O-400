@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- Rpm engine left -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Interior/Panel/Instruments/tach/tach1.xml</path>
+    <offsets>
+      <x-m> -2.459 </x-m>
+      <y-m> -2.098 </y-m>
+      <z-m>  0.176 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rpm engine right -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Interior/Panel/Instruments/tach/tach2.xml</path>
+    <offsets>
+      <x-m> -2.459</x-m>
+      <y-m>  2.098 </y-m>
+      <z-m>  0.176 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil temperature leftengine -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Interior/Panel/Instruments/oiltemp/oiltemp1.xml</path>
+    <offsets>
+      <x-m> -2.349 </x-m>
+      <y-m> -2.098 </y-m>
+      <z-m>  0.075 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil temperature rightengine -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Interior/Panel/Instruments/oiltemp/oiltemp2.xml</path>
+    <offsets>
+      <x-m> -2.349 </x-m>
+      <y-m>  2.098 </y-m>
+      <z-m>  0.075 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil pressure rightengine -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Interior/Panel/Instruments/oilpressure/oilpressure1.xml</path>
+    <offsets>
+      <x-m> -2.449 </x-m>
+      <y-m> 2.096 </y-m>
+      <z-m>  0.076 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil pressure leftengine -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Interior/Panel/Instruments/oilpressure/oilpressure2.xml</path>
+    <offsets>
+      <x-m> -2.449 </x-m>
+      <y-m>  -2.096 </y-m>
+      <z-m>  0.076 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> 90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Compass -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Interior/Panel/Instruments/compass/type259compass.xml</path>
+    <offsets>
+      <x-m> -4.4103 </x-m>
+      <y-m> -0.376 </y-m>
+      <z-m> -0.0703 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Airspeed -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -4.4103 </x-m>
+      <y-m>  0.1605 </y-m>
+      <z-m>  -0.033 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Altitude -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -4.4103 </x-m>
+      <y-m>  0.3851 </y-m>
+      <z-m>  -0.033 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

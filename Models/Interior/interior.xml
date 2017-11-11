@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- <path>interior.ac</path> -->
+
+
+
+  <!-- Pilot -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -4.143 </x-m>
+      <y-m> 0.236 </y-m>
+      <z-m> -0.508 </z-m>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Co pilot -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.185 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -0.624 </z-m>
+    <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- rear gunner -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Pilot/debout.xml</path>
+    <offsets>
+      <x-m> 2.846 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> 0.29 </z-m>
+    <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- engine and flight instruments -->
+  <model>
+    <path>Aircraft/HP-O-400/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
